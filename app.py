@@ -15,7 +15,26 @@ import time
 
 # Initialize Flask app
 app = Flask(__name__)
-swagger = Swagger(app)
+
+app.config['SWAGGER'] = {
+    'title': 'SureFix API',
+    'description': 'API for SureFix',
+    'contact': {
+        'name': 'SureFix',
+        'email': "bilalmohib7896@gmail.com",
+        'url': "https://github.com/bilalmohib",
+    },
+    'securityDefinitions': {
+        "BearerAuth": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    }
+}
+
+swagger = Swagger(
+    app)
 
 # Initialize Firestore DB Firestore isnt present in pyrebase so thats why had to use firebase_admin for that
 cred = credentials.Certificate('key.json')
