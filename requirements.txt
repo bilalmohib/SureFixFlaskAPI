@@ -1,0 +1,6 @@
+# requirements.txt
+flask==3.0.2
+gunicorn==21.2.0
+firebase-admin==6.4.0 
+pycryptodome==3.10.1
+Pyrebase4==4.7.1
