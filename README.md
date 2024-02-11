@@ -58,4 +58,17 @@ gcloud run deploy --image gcr.io/<project-id>/<container-name-any>
 ```
 
 ## Currrent Container name
-ContainerName="secured-todo-api"
+<!-- ContainerName="secured-todo-api" -->
+ContainerName="surefix"
+
+## Deployment Commands for deploying to Firebase Functions
+
+### Project Build Command
+```sh
+gcloud builds submit --tag gcr.io/pythonapi-c0178/surefix
+```
+
+### Project Build Command
+```sh
+gcloud run deploy --image gcr.io/pythonapi-c0178/surefix
+```

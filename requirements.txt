@@ -4,3 +4,6 @@ gunicorn==21.2.0
 firebase-admin==6.4.0 
 pycryptodome==3.10.1
 Pyrebase4==4.7.1
+setuptools==69.0.3
+flasgger==0.9.7.1
+functools==0.5
